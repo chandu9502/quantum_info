@@ -1,14 +1,12 @@
 # Grover's Algorithm
 
-## 1. What is Grover's Algorithm?
-
 Grover's algorithm is a quantum algorithm for **unstructured search**.
 
 * Classical search: $O(N)$
 * Grover search: $O(\sqrt{N})$
 * Speedup: **quadratic**
 
-The main idea is **amplitude amplification**.
+The idea is **amplitude amplification**.
 
 ---
 
@@ -386,45 +384,3 @@ DO_f|s\rangle
 (DO_f)^2|s\rangle
 \rightarrow \cdots
 $$
-
----
-
-## 14. Key Intuition
-
-**Oracle:**
-
-> Mark the solution using phase.
-
-**Diffusion:**
-
-> Amplify the marked solution using interference.
-
-Therefore:
-
-$$
-\boxed{
-\text{Phase marking}
-\rightarrow
-\text{Inversion about mean}
-\rightarrow
-\text{Amplitude amplification}
-}
-$$
-
----
-
-## 15. Complexity
-
-Classical search:
-
-$$
-\boxed{O(N)}
-$$
-
-Grover search:
-
-$$
-\boxed{O(\sqrt{N})}
-$$
-
-Grover provides a **quadratic speedup** for unstructured search.
