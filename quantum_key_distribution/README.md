@@ -1,14 +1,11 @@
 # Quantum Key Distribution (QKD)
 
-## What is QKD?
-
 **Quantum Key Distribution (QKD)** is a method for securely distributing a **secret encryption key** between two parties using the principles of **quantum mechanics**.
 
 QKD does not normally encrypt the actual message. Its main purpose is to **securely generate and distribute the key** that can later be used for encryption.
 
 ---
 
-## Why is QKD Used?
 
 The main problem in secure communication is:
 
@@ -132,7 +129,7 @@ After transmission:
 
 ---
 
-## Why Does Eve Get Detected?
+## How Does Eve Get Detected?
 
 Suppose Eve intercepts a photon.
 
@@ -193,17 +190,6 @@ The final key can then be used by a conventional encryption algorithm.
 
 ---
 
-# QKD vs Classical Cryptography
-
-| Classical Cryptography                             | QKD                                           |
-| -------------------------------------------------- | --------------------------------------------- |
-| Uses mathematical algorithms                       | Uses quantum mechanics                        |
-| Key exchange can rely on computational assumptions | Security is based on quantum properties       |
-| No-cloning is not involved                         | No-cloning theorem is important               |
-| Does not require a quantum channel                 | Requires a quantum communication channel      |
-| Can run on classical hardware                      | Requires specialized quantum/optical hardware |
-| Examples: RSA, ECC, Diffie-Hellman                 | Example: BB84                                 |
-
 ---
 
 # QKD and Quantum Computers
@@ -222,30 +208,5 @@ Shor's Algorithm
        ├── Diffie-Hellman
        └── ECC
 ```
-
-This has motivated two major approaches:
-
-```text
-              Quantum Security
-                    │
-          ┌─────────┴─────────┐
-          ↓                   ↓
-        PQC                   QKD
-          │                   │
- Classical algorithms    Quantum communication
- resistant to quantum    for key distribution
- attacks
-```
-
-### Post-Quantum Cryptography (PQC)
-
-Uses **classical computers** but cryptographic algorithms designed to resist quantum attacks.
-
-### Quantum Key Distribution (QKD)
-
-Uses **quantum communication** to establish secret keys.
-
-
-
 
 
